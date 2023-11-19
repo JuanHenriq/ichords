@@ -9,14 +9,14 @@
 
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/quiz_logo"
-        app:layout_constraintVertical_bias="0.350">
+        app:layout_constraintVertical_bias="0.3">
 
     </ImageView>
 
@@ -24,14 +24,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="QUIZ GAME"
-        android:textSize="60dp"
+        android:text="Quiz Game"
+        android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100"
+        app:layout_constraintVertical_bias="0.55"
         android:textColor="@color/black">
 
 
@@ -39,23 +39,24 @@
     </TextView>
 
 
-    <android.widget.Button
+    <Button
         android:id="@+id/start"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="500dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/option_bg"
         android:enabled="true"
         android:text="INICIAR"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        app:backgroundTint="#0068FF"
         android:textSize="40dp"
         android:textStyle="bold">
 
-    </android.widget.Button>
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

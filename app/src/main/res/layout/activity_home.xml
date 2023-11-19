@@ -88,25 +88,6 @@
             android:layout_marginTop="26dp"
             android:src="@drawable/forro"/>
 
-        <!-- Texto "Para iniciantes" -->
-        <TextView
-            android:id="@+id/textViewForBeginners"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imageViewClickable3"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="31dp"
-            android:text="Para iniciantes"
-            android:textSize="14sp"
-            android:textStyle="bold"/>
 
-        <!-- Imagem clicável -->
-        <ImageView
-            android:id="@+id/imageViewClickable4"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_below="@id/textViewForBeginners"
-            android:layout_marginTop="26dp"
-            android:src="@drawable/iniciantes"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -36,19 +36,16 @@ class ResultActivity : AppCompatActivity() {
                 50 <= percentage && percentage <= 99 -> {
 
                     performance.text = "BOM"
-                    output.background = resources.getDrawable(R.drawable.option_bg)
 
 
                 }
 
                 percentage >= 100 -> {
                     performance.text = "EXCELENTE"
-                    output.background = resources.getDrawable(R.drawable.right_bg)
                 }
 
                 percentage < 50 -> {
                     performance.text = "RUIM"
-                    output.background = resources.getDrawable(R.drawable.wrong_bg)
                 }
             }
 
