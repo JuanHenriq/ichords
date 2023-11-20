@@ -42,6 +42,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_below="@id/congratulationsText"
+                android:src="@drawable/photo_profile"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"/>
 

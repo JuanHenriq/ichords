@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,17 +19,40 @@ class HomeActivity : AppCompatActivity() {
             startActivity(splashIntent)
 
             Handler().postDelayed({
-                // Volta para a HomeActivity
+
                 val homeIntent = Intent(this, HomeActivity::class.java)
                 startActivity(homeIntent)
 
-                // Inicia a StartActivity após voltar para a HomeActivity
+
                 val startIntent = Intent(this, StartActivity::class.java)
                 startActivity(startIntent)
 
-                // Fecha a HomeActivity
+
                 finish()
             }, 2000)
         }
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
+        bottomNavigation.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.menu_home -> {
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    true
+                }
+                R.id.menu_favorites -> {
+
+                   // startActivity(Intent(this, FavoritosActivity::class.java))
+                    true
+                }
+                R.id.menu_profile -> {
+
+                    //startActivity(Intent(this, ProfileActivity::class.java))
+                    true
+                }
+                else -> false
+            }
+        }
+
     }
-}
+    }
+

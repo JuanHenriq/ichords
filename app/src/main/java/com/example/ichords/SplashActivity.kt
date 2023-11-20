@@ -13,11 +13,9 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
             Handler().postDelayed({
-            // Cria um Intent para iniciar a próxima atividade após o tempo determinado
             val intent = Intent(this, StartActivity::class.java)
             startActivity(intent)
 
-            // Fecha esta atividade (evita que o usuário volte à SplashActivity pressionando o botão Voltar)
             finish()
         }, SPLASH_TIME_OUT)
     }
