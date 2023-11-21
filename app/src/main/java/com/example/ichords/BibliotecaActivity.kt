@@ -1,30 +1,30 @@
 package com.example.ichords
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.*
 
 class BibliotecaActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var searchView: SearchView
+    private lateinit var bottomNavigation: BottomNavigationView
     private var mList = ArrayList<BibliotecaData>()
     private lateinit var adapter: BibliotecaAdapter
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_biblioteca)
 
         recyclerView = findViewById(R.id.recyclerView)
         searchView = findViewById(R.id.searchView)
+        bottomNavigation = findViewById(R.id.bottom_navigation)
 
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -44,10 +44,29 @@ class BibliotecaActivity : AppCompatActivity() {
 
         })
 
+        bottomNavigation.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.menu_home -> {
+                    // Redirecionar para a tela Home
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    true
+                }
+                R.id.menu_favorites -> {
+                    // Redirecionar para a tela de Favoritos
+                    // startActivity(Intent(this, FavoritosActivity::class.java))
+                    true
+                }
+                R.id.menu_profile -> {
+                    // Redirecionar para a tela de Perfil
+                    // startActivity(Intent(this, ProfileActivity::class.java))
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     private fun filterList(query: String?) {
-
         if (query != null) {
             val filteredList = ArrayList<BibliotecaData>()
             for (i in mList) {
@@ -73,5 +92,4 @@ class BibliotecaActivity : AppCompatActivity() {
         mList.add(BibliotecaData("MusicaF", R.drawable.music_f))
         mList.add(BibliotecaData("MusicaG", R.drawable.music_g))
     }
-
 }
