@@ -1,8 +1,8 @@
 package com.example.ichords
 
 import android.content.Intent
-import android.content.res.Resources
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -23,21 +23,30 @@ class ResultActivity : AppCompatActivity() {
         performance = findViewById(R.id.performance)
         output = findViewById(R.id.output)
 
+        val closeIcon = findViewById<ImageView>(R.id.closeIcon)
+        closeIcon.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         val intent = intent
         val correctAnsNo = intent.getStringExtra("correct")
         val totalAnsNo = intent.getStringExtra("total")
         correctAns.text = correctAnsNo
         totalAns.text = totalAnsNo
 
+        val scoreMultiplier = findViewById<TextView>(R.id.scoreText)
+        val scoreTextValue = correctAnsNo?.toInt() ?: 0
+        val multipliedScore = scoreTextValue * 10
+        scoreMultiplier.text = "+$multipliedScore"
+
         val percentage = (correctAnsNo?.toFloat()?.div(totalAnsNo?.toFloat()!!))?.times(100)
 
         if (percentage != null) {
             when {
                 50 <= percentage && percentage <= 99 -> {
-
                     performance.text = "BOM"
-
-
                 }
 
                 percentage >= 100 -> {
@@ -48,8 +57,6 @@ class ResultActivity : AppCompatActivity() {
                     performance.text = "RUIM"
                 }
             }
-
-
         }
     }
 

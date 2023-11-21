@@ -41,7 +41,7 @@ class HomeActivity : AppCompatActivity() {
                 }
                 R.id.menu_favorites -> {
 
-                   // startActivity(Intent(this, FavoritosActivity::class.java))
+                   //startActivity(Intent(this, FavoritosActivity::class.java))
                     true
                 }
                 R.id.menu_profile -> {

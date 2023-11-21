@@ -64,6 +64,13 @@ class QuizActivity : AppCompatActivity() {
 
     private fun wrongAns(option: Button) {
         option.background = resources.getDrawable(R.drawable.wrong_bg)
+        when (questionModel.answer) {
+            questionModel.option1 -> option1.background = resources.getDrawable(R.drawable.right_bg)
+            questionModel.option2 -> option2.background = resources.getDrawable(R.drawable.right_bg)
+            questionModel.option3 -> option3.background = resources.getDrawable(R.drawable.right_bg)
+            questionModel.option4 -> option4.background = resources.getDrawable(R.drawable.right_bg)
+        }
+
         wrongAnswerCount++
         moveToNextQuestionWithDelay()
     }
