@@ -41,7 +41,7 @@ class QuizActivity : AppCompatActivity() {
         questionsList.add(QuestionModel("Pergunta A", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta A"))
         questionsList.add(QuestionModel("Pergunta B", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta B"))
         questionsList.add(QuestionModel("Pergunta C?", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta C"))
-        questionsList.add(QuestionModel("Pergunta D?", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "RESPOSTA D"))
+        questionsList.add(QuestionModel("Pergunta D?", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta D"))
         questionsList.add(QuestionModel("Pergunta E", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta A"))
 
         questionModel = questionsList[index]

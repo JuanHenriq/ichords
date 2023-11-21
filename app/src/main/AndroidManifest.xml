@@ -41,5 +41,9 @@
             android:name=".ResultActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".BibliotecaActivity"
+            android:exported="false" />
+
     </application>
 </manifest>

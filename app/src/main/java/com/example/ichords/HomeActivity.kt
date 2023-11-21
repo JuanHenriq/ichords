@@ -23,36 +23,39 @@ class HomeActivity : AppCompatActivity() {
                 val homeIntent = Intent(this, HomeActivity::class.java)
                 startActivity(homeIntent)
 
-
                 val startIntent = Intent(this, StartActivity::class.java)
                 startActivity(startIntent)
-
 
                 finish()
             }, 2000)
         }
+
+        val imageViewClickable1 = findViewById<ImageView>(R.id.imageViewClickable1)
+        imageViewClickable1.setOnClickListener {
+            val bibliotecaIntent = Intent(this, BibliotecaActivity::class.java)
+            startActivity(bibliotecaIntent)
+        }
+
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         bottomNavigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_home -> {
-                    startActivity(Intent(this, HomeActivity::class.java))
+                    // Mantenha a tela atual (HomeActivity)
                     true
                 }
                 R.id.menu_favorites -> {
-
-                   //startActivity(Intent(this, FavoritosActivity::class.java))
+                    // Inicie a atividade de favoritos, se necessário
+                    // startActivity(Intent(this, FavoritosActivity::class.java))
                     true
                 }
                 R.id.menu_profile -> {
-
-                    //startActivity(Intent(this, ProfileActivity::class.java))
+                    // Inicie a atividade do perfil, se necessário
+                    // startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
                 else -> false
             }
         }
-
     }
-    }
-
+}
