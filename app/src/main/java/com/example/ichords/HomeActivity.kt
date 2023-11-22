@@ -41,7 +41,6 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_home -> {
-                    // Mantenha a tela atual (HomeActivity)
                     true
                 }
                 R.id.menu_favorites -> {
@@ -51,7 +50,7 @@ class HomeActivity : AppCompatActivity() {
                 }
                 R.id.menu_profile -> {
                     // Inicie a atividade do perfil, se necessário
-                    // startActivity(Intent(this, ProfileActivity::class.java))
+                    startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
                 else -> false

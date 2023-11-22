@@ -44,6 +44,12 @@
         <activity
             android:name=".BibliotecaActivity"
             android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShopActivity"
+            android:exported="false" />
 
     </application>
 </manifest>

@@ -20,9 +20,9 @@
         android:id="@+id/imageViewTopLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logoepesq"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"/>
+        android:src="@drawable/cabecalho"
+        android:layout_centerHorizontal="true"
+        />
 
     <!-- Imagem abaixo das anteriores -->
     <ImageView

@@ -47,18 +47,16 @@ class BibliotecaActivity : AppCompatActivity() {
         bottomNavigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_home -> {
-                    // Redirecionar para a tela Home
                     startActivity(Intent(this, HomeActivity::class.java))
                     true
                 }
                 R.id.menu_favorites -> {
-                    // Redirecionar para a tela de Favoritos
                     // startActivity(Intent(this, FavoritosActivity::class.java))
                     true
                 }
                 R.id.menu_profile -> {
                     // Redirecionar para a tela de Perfil
-                    // startActivity(Intent(this, ProfileActivity::class.java))
+                   startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
                 else -> false

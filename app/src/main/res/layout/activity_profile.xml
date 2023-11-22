@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagem no canto superior esquerdo -->
+    <ImageView
+        android:id="@+id/imageViewTopLeft"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/logoname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Imagem no canto superior direito -->
+    <ImageView
+        android:id="@+id/imageViewTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@id/imageViewTopLeft"
+        android:src="@drawable/baseline_shopping_cart_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <!-- Texto "GERAL" abaixo da imagem, centralizado -->
+    <TextView
+        android:id="@+id/textViewGeral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewTopLeft"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="GERAL"
+        android:textStyle="bold"
+        android:textColor="#0068FF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/imageViewTopLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Linha abaixo do texto, cor #0068FF -->
+    <View
+        android:id="@+id/lineView1"
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/textViewGeral"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#0068FF"
+        app:layout_constraintTop_toBottomOf="@id/textViewGeral"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Imagem abaixo da linha -->
+    <ImageView
+        android:id="@+id/imageViewBelowLine1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lineView1"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/user_profile"
+        app:layout_constraintTop_toBottomOf="@id/lineView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Linha abaixo da imagem, cor #CDCDCD -->
+    <View
+        android:id="@+id/lineView2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageViewBelowLine1"
+        android:layout_marginTop="9dp"
+        android:background="#CDCDCD"
+        app:layout_constraintTop_toBottomOf="@id/imageViewBelowLine1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Outra imagem abaixo da linha -->
+    <ImageView
+        android:id="@+id/imageViewBelowLine2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineView2"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/assinante"
+        app:layout_constraintTop_toBottomOf="@id/lineView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Linha abaixo da imagem, cor #BDBABA -->
+    <View
+        android:id="@+id/lineView3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageViewBelowLine2"
+        android:layout_marginTop="15dp"
+        android:background="#BDBABA"
+        app:layout_constraintTop_toBottomOf="@id/imageViewBelowLine2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Outra imagem abaixo da linha -->
+    <ImageView
+        android:id="@+id/imageViewBelowLine3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineView3"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/comunidade"
+        app:layout_constraintTop_toBottomOf="@id/lineView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Linha abaixo da imagem, cor #BDBABA -->
+    <View
+        android:id="@+id/lineView4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageViewBelowLine3"
+        android:layout_marginTop="9dp"
+        android:background="#BDBABA"
+        app:layout_constraintTop_toBottomOf="@id/imageViewBelowLine3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto "Siga-nos em nossas redes sociais" -->
+    <TextView
+        android:id="@+id/textViewRedesSociais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewBelowLine3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Siga-nos em nossas redes sociais"
+        android:textColor="#707070"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lineView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Imagem centralizada abaixo do texto -->
+    <ImageView
+        android:id="@+id/imageViewCentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRedesSociais"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/redes_sociais"
+        app:layout_constraintTop_toBottomOf="@id/textViewRedesSociais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Linha abaixo da imagem, cor #BDBABA -->
+    <View
+        android:id="@+id/lineView5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/imageViewCentral"
+        android:layout_marginTop="9dp"
+        android:background="#BDBABA"
+        app:layout_constraintTop_toBottomOf="@id/imageViewCentral"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto "AVALIE O APLICATIVO" abaixo da linha -->
+    <TextView
+        android:id="@+id/textViewAvalie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="AVALIE O APLICATIVO"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/lineView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="#0068FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
