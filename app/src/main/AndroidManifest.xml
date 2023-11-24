@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Ichords">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".InitialSplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +22,12 @@
         </activity>
 
         <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="false" />
@@ -44,11 +47,17 @@
         <activity
             android:name=".BibliotecaActivity"
             android:exported="false" />
+
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
+
         <activity
             android:name=".ShopActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FavoritosActivity"
             android:exported="false" />
 
     </application>

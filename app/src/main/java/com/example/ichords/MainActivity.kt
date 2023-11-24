@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.text.method.PasswordTransformationMethod
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         val edUsername = findViewById<EditText>(R.id.ed_username)
         val edPassword = findViewById<EditText>(R.id.ed_password)
 
+        // Configura o EditText da senha para exibir asteriscos ou círculos
+        edPassword.transformationMethod = PasswordTransformationMethod.getInstance()
 
         val sharedPreferences = getSharedPreferences("MY_PRE", Context.MODE_PRIVATE)
         val getUsername = sharedPreferences.getString("USERNAME", "")
@@ -24,6 +27,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this, HomeActivity::class.java)
             startActivity(i)
         }
+
         btnlogin.setOnClickListener {
             val username = edUsername.text.toString()
             val password = edPassword.text.toString()
@@ -35,8 +39,6 @@ class MainActivity : AppCompatActivity() {
 
             val i = Intent(this, HomeActivity::class.java)
             startActivity(i)
-
-
         }
     }
 }

@@ -44,12 +44,11 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.menu_favorites -> {
-                    // Inicie a atividade de favoritos, se necessário
-                    // startActivity(Intent(this, FavoritosActivity::class.java))
+
+                     startActivity(Intent(this, FavoritosActivity::class.java))
                     true
                 }
                 R.id.menu_profile -> {
-                    // Inicie a atividade do perfil, se necessário
                     startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
