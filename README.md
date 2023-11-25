@@ -1,5 +1,5 @@
 # Projeto ichords Quiz
-![imagemA](./imagens/imagemA.png)
+![imagemA](./imagemA.png)
 
 ## Sobre📘
 ### Objetivo
