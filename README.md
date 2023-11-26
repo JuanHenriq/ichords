@@ -5,6 +5,16 @@
 ### Objetivo
 <p>O objetivo dessa versão do ichords é oferecer uma plataforma de aprendizado de música que abrange desde conceitos fundamentais até desafios mais avançados. O aplicativo é desenvolvido para entusiastas da música que desejam melhorar suas habilidades em violão e teoria musical. </p>
 
+
+## Tecnologias Utilizadas🛠
+
+- [Android Studio](https://developer.android.com/studio)
+- [Kotlin](https://kotlinlang.org/)
+- [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
+- [Intent](https://developer.android.com/reference/android/content/Intent)
+- [Handler](https://developer.android.com/reference/android/os/Handler)
+- [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences?hl=pt-br)
+
 ## Recursos Destacados🎮
 <li> <b>Quiz Interativo:</b> Teste seus conhecimentos musicais com o quiz incorporado.
  </li>
@@ -12,13 +22,6 @@
  </li>
  <li> <b>Lojas Musicais:</b> Descubra e adquira produtos musicais na loja integrada.
  </li>
-
- ## Guia de Instalação📄
- <ol>
-  <li>Clone este repositório.</li>
-  <li>Abra o projeto no Android Studio.</li>
-  <li>Execute o aplicativo em um emulador ou dispositivo Android.</li>
-</ol>
 
 ## Tópicos Abordados no Projeto☑
 </p> Esse aplicativo foi desenvolvido com base no ichords, contando somente com componentes ensinados durante o processo do projeto que abrange os seguintes desafios:</p>
@@ -126,6 +129,40 @@
   </li>
 
 </ol>
+
+
+ ## Guia de Instalação📄
+<p>Siga estes passos para configurar e executar o aplicativo em seu ambiente de desenvolvimento:</p>
+
+  <b>Clone este repositório:</b>
+  <p>```bash
+   git clone https://github.com/JuanHenriq/ichords.git</p>
+ 
+<ol>
+  <li><b>Abra o projeto no Android Studio:</b></li>
+  <ol>
+      <li>Abra o Android Studio.</li>
+      <li>o menu principal, clique em "File" (Arquivo) e selecione "Open" (Abrir).</li>
+      <li>Navegue até o diretório onde você clonou o repositório e selecione a pasta do projeto.</li>
+    </ol>
+  <li>
+    <b>Configure o Emulador ou Conecte um Dispositivo Android:</b>
+    <ol>
+      <li>Selecione ou crie um emulador Android usando o AVD Manager no Android Studio.</li>
+      <li>Conecte um dispositivo Android ao computador usando um cabo USB e ative a depuração USB nas configurações do desenvolvedor.</li>
+    </ol>
+    <li>
+    <b>Execute o Aplicativo:</b>
+    <ol>
+      <li>No Android Studio, clique no botão "Run" (Executar) ou pressione Shift + F10 para compilar e executar o aplicativo.</li>
+      <li>Selecione o emulador ou dispositivo Android desejado.</li>
+    </ol>
+     <li>
+    <b>Configure o Emulador ou Conecte um Dispositivo Android:</b>
+    <ol>
+      <li>Uma vez instalado, explore as funcionalidades do aplicativo no emulador ou dispositivo Android.</li>
+    </ol>
+  </li>
 
 ### Agradecimentos💙
 
