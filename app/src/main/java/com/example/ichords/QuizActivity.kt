@@ -38,11 +38,11 @@ class QuizActivity : AppCompatActivity() {
         option4 = findViewById(R.id.option4)
 
         questionsList = ArrayList()
-        questionsList.add(QuestionModel("Qual é a postura recomendada ao tocar violão?", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta A"))
-        questionsList.add(QuestionModel("O que é uma tablatura no contexto do violão?", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta B"))
-        questionsList.add(QuestionModel("Qual elemento da música se concentra no tempo e na duração dos sons?", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta C"))
-        questionsList.add(QuestionModel("Pergunta D?", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta D"))
-        questionsList.add(QuestionModel("Pergunta E", "Resposta A", "Resposta B", "Resposta C", "Resposta D", "Resposta A"))
+        questionsList.add(QuestionModel("Qual é a principal razão para manter os dedos arqueados ao tocar acordes no violão?", "Estilo visual", "Conforto", "Estabilidade e clareza sonora", "Moda", "Estabilidade e clareza sonora"))
+        questionsList.add(QuestionModel("Em um acorde maior no violão, qual dedo geralmente pressiona a nota mais aguda?", "Dedo indicador", "Dedo médio", "Dedo anelar", "Dedo mínimo", "Dedo anelar"))
+        questionsList.add(QuestionModel("Ao tocar um acorde de D maior no violão, qual dedo é geralmente utilizado para pressionar a terceira corda (corda B)?", "Dedo indicador", "Dedo médio", "Dedo anelar", "Dedo mínimo", "Dedo médio"))
+        questionsList.add(QuestionModel("Qual é a principal diferença entre uma nota e um acorde no violão?", "Nota é um som único; acorde é uma combinação de notas", "Nota é mais alta que um acorde", "Nota é um acorde invertido", "Não há diferença, os termos são intercambiáveis", "Nota é um som único; acorde é uma combinação de notas"))
+        questionsList.add(QuestionModel("Para um iniciante, qual acorde é geralmente recomendado aprender primeiro devido à sua simplicidade?", "C Maior", "G Maior", "D Maior", "E Maior", "C Maior"))
 
         questionModel = questionsList[index]
         setAllQuestions()
