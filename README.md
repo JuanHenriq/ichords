@@ -1,9 +1,6 @@
 # Projeto ichords Quiz
 ![imagemA](./imagemA.png)
 
-# Projeto ichords Quiz
-![imagemA](./imagemA.png)
-
 ## Sobre📘
 ### Objetivo
 <p>O objetivo dessa versão do ichords é oferecer uma plataforma de aprendizado de música que abrange desde conceitos fundamentais até desafios mais avançados. O aplicativo é desenvolvido para entusiastas da música que desejam melhorar suas habilidades em violão e teoria musical. </p>
