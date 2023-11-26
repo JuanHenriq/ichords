@@ -80,8 +80,7 @@
 <p>Siga estes passos para configurar e executar o aplicativo em seu ambiente de desenvolvimento:</p>
 
 <b>Clone este repositório:</b>
-<p>```bash
-git clone https://github.com/JuanHenriq/ichords.git</p>
+```git clone https://github.com/JuanHenriq/ichords.git```
 
 1. <b>Abra o projeto no Android Studio:</b>
     1. Abra o Android Studio.
