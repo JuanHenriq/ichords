@@ -79,6 +79,8 @@
 <b>Clone este repositório:</b>
 ```git clone https://github.com/JuanHenriq/ichords.git```
 
+### **Passo 1: Clone do Projeto**
+
 1. <b>Abra o projeto no Android Studio:</b>
     1. Abra o Android Studio.
     2. No menu principal, clique em "File" (Arquivo) e selecione "Open" (Abrir).
@@ -91,6 +93,51 @@
     2. Selecione o emulador ou dispositivo Android desejado.
 4. <b>Explore o Aplicativo:</b>
     1. Uma vez instalado, explore as funcionalidades do aplicativo no emulador ou dispositivo Android.
+
+
+### **Passo 2: Geração do APK no Android Studio**
+
+Certifique-se de que você gerou o arquivo APK do seu projeto no Android Studio.
+
+1. **Build do Projeto**: No Android Studio, vá para o menu e clique em "Build" ou "Construir".
+
+2. **Build Bundle(s) / APK(s)**: Selecione "Build Bundle(s) / APK(s)".
+
+3. **Build APK(s)**: Escolha "Build APK(s)" para gerar o arquivo APK do seu aplicativo.
+
+### **Passo 3: Transferência para o Smartphone**
+
+Agora, precisamos transferir o arquivo APK para o seu smartphone.
+
+1. **Conecte o Smartphone ao Computador**: Use um cabo USB para conectar o smartphone ao computador.
+
+2. **Copie o APK para o Smartphone**: Copie o arquivo APK gerado para o armazenamento interno ou externo do seu smartphone.
+
+### **Passo 4: Instalação do APK no Smartphone**
+
+Agora, podemos instalar o aplicativo no smartphone.
+
+1. **Abra o Gerenciador de Arquivos**: No smartphone, abra o aplicativo de gerenciamento de arquivos.
+
+2. **Localize o APK**: Encontre o arquivo APK que você transferiu.
+
+3. **Toque no APK**: Toque no arquivo APK para iniciar o processo de instalação.
+
+4. **Permissões**: Se solicitado, conceda as permissões necessárias.
+
+5. **Instalar**: Toque em "Instalar" para iniciar a instalação.
+
+6. **Concluir a Instalação**: Após a conclusão, você verá uma mensagem indicando que o aplicativo foi instalado.
+
+### **Passo 5: Execução do Aplicativo no Smartphone**
+
+Finalmente, inicie o aplicativo em seu smartphone.
+
+1. **Encontre o Ícone do Aplicativo**: No menu de aplicativos ou tela inicial, procure pelo ícone do seu aplicativo.
+
+2. **Toque para Abrir**: Toque no ícone para iniciar o aplicativo.
+
+Agora você deve ter com sucesso instalado e executado o seu aplicativo Android no seu smartphone. Lembre-se de que você pode precisar repetir o processo sempre que atualizar o aplicativo.
 
 ## Agradecimentos💙
 
